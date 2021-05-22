@@ -5,12 +5,12 @@ import 'normalize.css/normalize.css';
 import initSvgIcon from '@/icons/index';
 import App from './App.vue';
 import router from './router';
-import store from './store';
+import store, { key } from './store';
 import installElementPlus, { Size } from './plugins/element';
 import '@/styles/index.scss';
 
 const app = createApp(App);
-app.use(store)
+app.use(store, key)
   .use(router)
   .use(installElementPlus)
   .use(initSvgIcon)

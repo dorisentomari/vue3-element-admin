@@ -1,19 +1,16 @@
 <template>
   <div>
     <h1 @click="sayHi">dashboard page</h1>
+    <input type="text">
   </div>
 </template>
 
 <script>
-import { getCurrentInstance } from 'vue';
-
 export default {
   name: 'dashboard',
 
   setup() {
-    const instance = getCurrentInstance();
     const sayHi = () => {
-      instance.proxy.$message('你好');
       console.log('hi svg');
     };
     return {

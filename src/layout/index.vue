@@ -5,25 +5,26 @@
     </div>
     <div class="main-container">
       <div class="header">
-        <div class="navbar">navbar</div>
+        <Navbar/>
         <div class="tags-view">tagsview</div>
       </div>
-      <div class="app-main">
-        <h2>app main</h2>
-        <router-view></router-view>
-      </div>
+      <app-main/>
     </div>
   </div>
 </template>
 
 <script>
-import Sidebar from '@/components/Sidebar/index.vue';
+import Sidebar from '@/layout/Sidebar/index.vue';
+import AppMain from '@/layout/AppMain.vue';
+import Navbar from '@/layout/Navbar.vue';
 
 export default {
   name: 'layout',
 
   components: {
     Sidebar,
+    AppMain,
+    Navbar,
   },
 
 };
@@ -41,22 +42,18 @@ export default {
     flex-direction: column;
 
     .header {
-      background: cyan;
 
       .navbar {
         height: 50px;
-        background: #1890ff;
       }
 
       .tags-view {
         height: 34px;
-        background: #12efff;
       }
     }
 
     .app-main {
       min-height: calc(100vh - 84px);
-      background: red;
     }
   }
 

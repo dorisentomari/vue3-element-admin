@@ -14,6 +14,7 @@ const constantRoutes: Array<RouteRecordRaw> = [
         component: () => import(/* webpackChunkName: "dsahboard" */ '@/views/dashboard/index.vue'),
         meta: {
           title: 'Dashboard',
+          icon: 'dashboard',
         },
       },
     ],
@@ -23,7 +24,7 @@ const constantRoutes: Array<RouteRecordRaw> = [
 const asyncRoutes: Array<RouteRecordRaw> = [
   {
     path: '/documentation',
-    component: Layout, // 布局组件作为一级路由
+    component: Layout,
     redirect: '/documentation/index',
     children: [
       {
@@ -32,7 +33,7 @@ const asyncRoutes: Array<RouteRecordRaw> = [
         component: () => import(/* webpackChunkName: "documentation" */ '@/views/documentation/index.vue'),
         meta: {
           title: 'Documentation',
-          icon: 'documentation',
+          icon: 'el-icon-platform-eleme',
         },
       },
     ],

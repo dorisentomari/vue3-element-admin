@@ -2,6 +2,7 @@ import { App } from 'vue';
 import {
   ElButton, ElMessage, ElNotification, ElMessageBox,
   ElMenu, ElMenuItem, ElMenuItemGroup, ElSubmenu,
+  ElRow, ElCol, ElBreadcrumb, ElBreadcrumbItem,
 } from 'element-plus';
 import lang from 'element-plus/lib/locale/lang/zh-cn';
 import locale from 'element-plus/lib/locale';
@@ -21,6 +22,10 @@ export default (app: App) => {
     ElMenuItem,
     ElMenuItemGroup,
     ElSubmenu,
+    ElRow,
+    ElCol,
+    ElBreadcrumb,
+    ElBreadcrumbItem,
   ];
 
   components.forEach((component) => {

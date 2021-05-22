@@ -24,5 +24,7 @@ module.exports = {
     'no-param-reassign': 0,
     '@typescript-eslint/no-param-reassign': 0,
     'no-unused-expressions': 'off',
+    'no-plusplus': 'off',
+    'arrow-body-style': ['off', "always"]
   },
 };
